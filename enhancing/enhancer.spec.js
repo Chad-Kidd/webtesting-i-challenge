@@ -11,3 +11,17 @@ describe('enhancer.js', () => {
     })      
  })
 })
+
+describe('enhancer.js', () => {
+    describe('succeed() method', () => {
+  it('if not 20 return ehancement increased by 1', () =>  { 
+      
+    expect(enhancer.succeed(6).enhancement).toBe(7);
+    //if at 20 do not increae by 1
+    expect(enhancer.succeed(20).enhancement).toBe(20);
+   
+    })      
+ })
+})
+
+
